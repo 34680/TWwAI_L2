@@ -1,0 +1,1 @@
+Za pomocą callbacku w odpowiedzi serwera.
