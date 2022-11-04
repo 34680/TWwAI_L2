@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>MJ</title>
+
+   <link rel="stylesheet" href="style.css" type="">
+   <style>
+        body, html {
+        height: 100%;
+        margin: 0;
+        }
+
+        .background {
+            background-image: url("https://www.national-geographic.pl/media/cache/slider_big/uploads/media/default/0014/60/gwiazdozbiory-nieba-polnocnego-jakie-sa-ich-nazwy-i-jak-je-znalezc-fot-xue-bing-costfoto-future-publishing-via-getty-images.jpeg");
+            height: 30%;
+        
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .text {
+            height: 50vh;
+            background-color: #e8dbdb;
+            font-size: 36px;
+            padding: 15px;
+        }
+
+        nav {
+            position: fixed;
+            background-color: #fff;
+            width: 100%;
+            box-shadow: 10px 5px 5px black;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #0d0fbf;
+            transition: 0.5s;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        .other {
+            background-color: #6c92e5;
+            padding: 15px;
+        }
+
+        .kontakt {
+            padding: 15px;
+        }
+   </style>
+</head>
+
+<body>
+    <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#przedmiot">Przedmiot</a></li>
+        <li><a href="#katedra">Katedra</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    </nav>
+
+    <section id="home"></section>
+
+    <div class="background"></div>
+    <section id="przedmiot" class="text">
+        <h2><%= subject %></h2>
+        <p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+        Lorem Ipsum.</p>
+    </section>
+    
+    <section id="katedra" class="other">
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="katedra">
+        </div>
+    </section>
+    
+    <div class="background"></div>
+    
+    <section id="kontakt" class="kontakt">
+    
+        <div>
+            Kontakt:
+            <ul>
+                <li>tel: 123 123 134</li>
+                <li>email: test@test.pl</li>
+                <li>skype: test</li>
+            </ul>
+        </div>
+    
+    </section>
+
+    <footer>
+        <p class="copy">Copyrights &copy; | 2021</p>
+    </footer>
+</body>
+</html>
+ 
