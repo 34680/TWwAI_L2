@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.background {
+    background-image: url("https://www.national-geographic.pl/media/cache/slider_big/uploads/media/default/0014/60/gwiazdozbiory-nieba-polnocnego-jakie-sa-ich-nazwy-i-jak-je-znalezc-fot-xue-bing-costfoto-future-publishing-via-getty-images.jpeg");
+    height: 100%;
+ 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    height: 50vh;
+    background-color: #e8dbdb;
+    font-size: 36px;
+    padding: 15px;
+}
+
+nav {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 10px 5px 5px black;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0d0fbf;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+}
+
+.other {
+    background-color: #6c92e5;
+    padding: 15px;
+}
+
+.kontakt {
+    padding: 15px;
+}
